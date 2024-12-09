@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="csp-nonce" content="c609dcfe-3030-4214-8d15-66dc9464e9ec">
+        
+        
+        <meta name="description" content="View the slide with &#34;Slide Mode&#34;.">
+        
+        <title>Matlab final project - HackMD</title>
+        <link rel="icon" type="image/png" href="https://hackmd.io/favicon.png">
+        <link rel="apple-touch-icon" href="https://hackmd.io/apple-touch-icon.png">
+        
+<script nonce="c609dcfe-3030-4214-8d15-66dc9464e9ec">
+  window.domain = 'hackmd.io'
+  window.urlpath = ''
+  window.debug = false || window.localStorage.getItem('HMD_DEBUG_FLAG') === 'true'
+  window.version = '1.3.0'
+  window.brand = 'HackMD'
+
+  
+
+  window.GOOGLE_DRIVE_API_KEY = 'AIzaSyAHmcP5gL_64ZafuAYOvJruFAIaYgHQaY4'
+  window.GOOGLE_DRIVE_CLIENT_ID = '65857506266-76uhhee8se8dgs1i0q8fhtj1prg0ar27.apps.googleusercontent.com'
+  window.DROPBOX_APP_KEY = 'rdoizrlnkuha23r'
+  
+  window.PLANTUML_SERVER = 'https://ptuml.hackmd.io'
+
+  window.ASSET_URL = 'https://assets.hackmd.io'
+
+  window.USER_CAN_CREATE_TEAM = true
+  window.USER_CAN_DELETE_ACCOUNT = true
+  window.USER_DELETE_ACCOUNT_VIA_EMAIL = true
+  window.PAYMENT_ENABLED = true
+  window.PAYMENT_PROMOTION_BANNER_ENABLED = false
+  window.GITHUB_SYNC_ENABLED = true
+  window.GITLAB_SYNC_ENABLED = false
+  window.GITLAB_SYNC_BASE_URL = ''
+  window.VCS_SYNC_MODE = 'github'
+  window.VCS_PROVIDER_NAME = 'GitHub'
+  window.FREE_TEAM_NUM = 20
+  window.FREE_TEAM_MEMBER_NUM = 3
+  window.FREE_PUBLIC_TEAM_NUM = 10
+  window.NEO_OVERVIEW_UI = false
+  window.FOLDER_ENABLE = false
+  
+  window.ALLOW_ANONYMOUS = true
+  window.ALLOW_ANONYMOUS_EDIT = false
+  window.ALLOW_DOWNLOAD_PDF = true
+  window.PUBLIC_OVERVIEW = false
+  window.INTERNAL_PUBLIC_OVERVIEW = false
+  window.FULL_TEXT_SEARCH_ENABLE = false
+  window.ALGOLIA_SEARCH_ENABLE = true
+  window.MARKETING_EMAIL_ENABLE = true
+  window.OFFLINE_ACCESS = true
+  
+  
+  
+    window.WALLET_CONNECT_PROJECT_ID = '91d6fa182b725b5895a17a170a5878c1'
+  
+  window.API_MANAGEMENT_UI_ENABLE = true
+  window.FEEDBACK_UI_ENABLE = true
+  window.PUBLISH_ENABLE = true
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  window.TRASH_NOTE_DELETE_AFTER_FREE = 3
+  window.TRASH_NOTE_DELETE_AFTER_PAID = 30
+
+  
+
+  
+    window.IS_OWNER_UPGRADED = false
+  
+
+  
+    window.IMGUR_FALLBACK_CDN = 'https://imgur-backup.hackmd.io'
+  
+
+  
+    window.CLOUD_META_UI = true
+  
+  
+    window.CLOUD_META_API = true
+  
+  
+    window.CLOUD_META_MIGRATION = false
+  
+  
+    window.YAML_METADATA_ENABLED = false
+  
+
+  
+    window.NOTE_CAPACITY_LIMIT = 50
+  
+
+  
+    window.DOCUMENT_MAX_LENGTH = 100000
+  
+
+  
+    window.SOCIAL_NETWORK_FEATURES_ENABLED = true
+  
+
+  
+    window.PUBLISHMENT_MODERATION_ENABLED = true
+  
+
+  
+
+  window.SUGGEST_EDIT_ENABLED = true
+  
+
+  
+    window.REALTIME_CLIENT_WITH_CREDENTIALS = false
+  
+
+  
+
+  
+    window.DEBUG_DISCONNECT_SOCKET_WHEN_OFFLINE = false
+  
+
+  
+    window.PREFERRED_THEME = "dark"
+  
+
+  
+
+  
+    window.USE_NEW_LOGO = true
+  
+
+  
+    window.ITERABLE_ENABLED = true
+  
+  
+    window.ITERABLE_API_KEY = "c2c36a44c2614fb19aa3b46d660bbce2"
+  
+
+  
+
+  
+</script>
+
+
+        
+         <link href="https://assets.hackmd.io/build/font-vendor.ea8218d7d4f468b2c430.css" rel="stylesheet"><link href="https://assets.hackmd.io/build/common-vendor.0a08ae20e14fefe857eb.css" rel="stylesheet"><link href="https://assets.hackmd.io/build/slide-vendor.4f9ce891d775b406c282.css" rel="stylesheet"><link href="https://assets.hackmd.io/build/slide.0d565f5ecb591b14b52c.css" rel="stylesheet">
+
+        <!-- style-loader will insert style before this div in development -->
+        <!-- This prevents overwriting reveal.js theme css -->
+        <meta id="style-tag-insertion">
+
+        <!-- For reveal.js theme -->
+        
+        <link rel="stylesheet" href="https://assets.hackmd.io/build/reveal.js/dist/theme/defaultTheme.css" id="theme">
+        
+
+        <!-- For overwrite reveal.js -->
+        <link rel="stylesheet" href="https://hackmd.io/build/slide.css">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js" integrity="sha256-8E4Is26QH0bD52WoQpcB+R/tcWQtpzlCojrybUd7Mxo=" crossorigin="anonymous"></script>
+<![endif]-->
+
+    </head>
+    <body>
+        <div class="container" data-hard-breaks="true">
+            <div class="reveal">
+                <div class="slides" style="display: none;">
+
+&lt;!-- .slide: data-transition=&#34;slide&#34; --&gt;
+# Music App &lt;br&gt; w/ Equalizer
+
+## B10401019 呂祐寬
+
+---
+
+&lt;!-- .slide: data-transition=&#34;slide&#34; --&gt;
+## Why this project?
+
+----
+
+&lt;!-- .slide: data-transition=&#34;slide&#34; --&gt;
+## Reasons
+
+1. Have a lot of music data
+
+2. Good at signal processing
+
+3. Existing apps for example
+
+---
+
+&lt;!-- .slide: data-transition=&#34;slide&#34; --&gt;
+## Features
+
+----
+
+&lt;!-- .slide: data-transition=&#34;slide&#34; --&gt;
+## Preview music waves
+&lt;img src=&#34;https://i.imgur.com/7eTlKJU.png&#34; alt=&#34;app screenshot&#34; width=&#34;700px&#34;&gt;
+
+----
+
+&lt;!-- .slide: data-transition=&#34;slide&#34; --&gt;
+## Working Music Player
+
+&lt;img src=&#34;https://i.imgur.com/4amjnUa.png&#34; alt=&#34;Music Player&#34; width=&#34;700px&#34;&gt;
+
+----
+
+&lt;!-- .slide: data-transition=&#34;slide&#34; --&gt;
+## Full range Equalizer
+
+&lt;img src=&#34;https://i.imgur.com/URY6Jcq.png&#34; alt=&#34;Equalizer screenshot&#34; width=&#34;700px&#34;&gt;
+
+----
+
+&lt;!-- .slide: data-transition=&#34;slide&#34; --&gt;
+## Smoothing between sliders
+&lt;img src=&#34;https://i.imgur.com/Ykgiuui.png&#34; alt=&#34;Auto-smoothing function&#34; width=&#34;700px&#34;&gt;
+
+----
+
+&lt;!-- .slide: data-transition=&#34;slide&#34; --&gt;
+## Preview adjusted music
+&lt;img src=&#34;https://i.imgur.com/Y0lPoW7.png&#34; alt=&#34;Preview adjusted music&#34; width=&#34;700px&#34;&gt;
+
+----
+
+&lt;!-- .slide: data-transition=&#34;slide&#34; --&gt;
+## Four-Level Logging 
+&lt;img src=&#34;https://i.imgur.com/llCN8gi.png&#34; alt=&#34;logging Error&#34; width=&#34;700px&#34;&gt;
+
+---
+
+&lt;!-- .slide: data-transition=&#34;slide&#34; --&gt;
+## App Structure
+
+----
+
+&lt;!-- .slide: data-transition=&#34;slide&#34; --&gt;
+&lt;img src=&#34;https://i.imgur.com/NP3fDzc.png&#34; alt=&#34;working_diagram&#34;&gt;
+
+---
+
+&lt;!-- .slide: data-transition=&#34;slide&#34; --&gt;
+## Problems / Challenges
+
+---
+
+
+&lt;!-- .slide: data-transition=&#34;slide&#34; --&gt;
+## I. Player sync
+
+----
+
+
+&lt;!-- .slide: data-transition=&#34;slide&#34; --&gt;
+## 1st thought
+## Update Slider every second
+
+----
+
+
+&lt;!-- .slide: data-transition=&#34;slide&#34; --&gt;
+```graphviz
+digraph{
+    compound=true
+    rankdir=LR
+    bgcolor=&#34;#191919&#34;
+    
+    graph [fontname=&#34;Source Sans Pro&#34;,fontsize=25, color=&#34;#ffffff&#34;, fontcolor=&#34;#ffffff&#34;];
+    node [fontname=&#34;Source Sans Pro&#34;,fontsize=25, color=&#34;#ffffff&#34;, fontcolor=&#34;#ffffff&#34;];
+  edge [fontname=&#34;Source Sans Pro&#34;,fontsize=20, color=&#34;#ffffff&#34;, fontcolor=&#34;#ffffff&#34;];
+  
+  
+  p [label=&#34;Play&#34;] [shape=box]
+  p -&gt; w
+ 
+ subgraph cluster1{
+ concentrate=true
+  w [label=&#34;Wait 1s&#34;] [shape=box]
+  u [label=&#34;Update\n1s&#34;] [shape=ellipse]
+  w -&gt; u 
+  u -&gt; w 
+  label=&#34;cycle&#34;
+ }
+ 
+ r [label=&#34;Actually takes time&#34; fontsize=18 fontcolor=&#34;#FFEE00&#34;] [shape=plaintext]
+ r -&gt; u
+    
+}
+```
+
+since the `Update` actually takes time
+1 cycle &gt; 1 sec
+
+&amp;rarr; difference adds up through time
+
+----
+
+
+&lt;!-- .slide: data-transition=&#34;slide&#34; --&gt;
+## Fix
+## Update Slider based on `datetime`
+
+----
+
+
+&lt;!-- .slide: data-transition=&#34;slide&#34; --&gt;
+```graphviz
+digraph{
+    compound=true
+    rankdir=LR
+    bgcolor=&#34;#191919&#34;
+    
+    graph [fontname=&#34;Source Sans Pro&#34;,fontsize=25, color=&#34;#ffffff&#34;, fontcolor=&#34;#ffffff&#34;];
+    node [fontname=&#34;Source Sans Pro&#34;,fontsize=25, color=&#34;#ffffff&#34;, fontcolor=&#34;#ffffff&#34;];
+  edge [fontname=&#34;Source Sans Pro&#34;,fontsize=20, color=&#34;#ffffff&#34;, fontcolor=&#34;#ffffff&#34;];
+  
+  
+  p [label=&#34;Play&#34;] [shape=box]
+  p -&gt; w
+ 
+ subgraph cluster1{
+ concentrate=true
+  w [label=&#34;Wait 1s&#34;] [shape=box]
+  u [label=&#34;Update&#34;] [shape=ellipse]
+  w -&gt; u 
+  u -&gt; w 
+  label=&#34;cycle&#34;
+ }
+ 
+  u -&gt; d [label=&#34;update\ncurrent\ntime&#34;]
+ d -&gt; u [label=&#34;get\nactual\npassed\ntime&#34;]
+ 
+ d [label=&#34;current\ndatetime&#34;] [shape=circle]
+
+ 
+    
+}
+```
+`datetime` is used to ensure that 
+`Update` correctly update the time passed
+
+----
+
+
+&lt;!-- .slide: data-transition=&#34;slide&#34; --&gt;
+## implement
+
+```matlab
+while app.PlayerPlaying
+    now = datetime; % get curr time
+    playtime = now - app.StartPlayingTime; %timedelta
+    app.StartPlayingTime = now; %update time
+    
+    sliderChange = app.MusicSampleRate * seconds(playtime);
+    changedSlider = app.Slider.Value + sliderChange;
+    % ensure in range
+    app.Slider.Value = min(app.MusicLength, changedSlider);
+    % update components
+    updateCurrLabel(app,app.Slider.Value)
+    updateCursorLines(app, app.Slider.Value)
+    pause(0.5) % can be any number now
+ end
+```
+
+
+---
+
+&lt;!-- .slide: data-transition=&#34;slide&#34; --&gt;
+## II. Equalizer Algorithm
+
+----
+
+&lt;!-- .slide: data-transition=&#34;slide&#34; --&gt;
+```graphviz
+digraph{
+    compound=true
+    rankdir=LR
+    bgcolor=&#34;#191919&#34;
+    
+    graph [fontname=&#34;Source Sans Pro&#34;,fontsize=25, color=&#34;#ffffff&#34;, fontcolor=&#34;#ffffff&#34;];
+    node [fontname=&#34;Source Sans Pro&#34;,fontsize=25, color=&#34;#ffffff&#34;, fontcolor=&#34;#ffffff&#34;];
+  edge [fontname=&#34;Source Sans Pro&#34;,fontsize=20, color=&#34;#ffffff&#34;, fontcolor=&#34;#ffffff&#34;];
+  
+  subgraph cluster1{
+  w [label=&#34;Music Wave\nstereo&#34;] [shape=box]
+  df [label=&#34;Series of\nFrequencies&#34;] [shape=box]
+  eq [label=&#34;Equalizer\nadjustment&#34;] [shape=box]
+  label=&#34;&#34;
+  }
+  w -&gt; df [label=&#34;1&#34;]
+  df-&gt; eq [label=&#34;2&#34;]
+  eq -&gt; w
+  
+  no [label=&#34;Normalize\nor\nFilter&#34;] [shape=box]
+  w -&gt; no [label=&#34;3&#34;]
+}
+```
+
+
+1. Fourier Transform
+2. Sound Intensity: Decibels
+3. Normalize / Filter
+
+----
+
+## 1. Fourier Transform
+### `fft()`
+
+----
+
+![matlab fft plot](https://www.mathworks.com/help/examples/matlab/win64/FFTOfNoisySignalExample_02.png)
+
+- Symmetrical Output
+- Up to $\frac{\text{Sample Rate}}{2}$ Hz
+
+----
+
+## 2. Sound Intensity
+### Decibels
+
+----
+
+### &lt;font color=&#34;#FFEE00&#34;&gt;Decibel is a logarithmic scale&lt;/font&gt;
+
+$\text{dB} + 20\rightarrow\text{amplitude} \times 10$
+
+$\Rightarrow\frac{\text{amplitde}&#39;}{\text{amplitde}} = 10^{\frac{\Delta \text{dB}}{20}}$
+
+----
+
+## 3. *Normalize* or *Filter*
+
+----
+
+### `audioread` normalizes to $[-1,1]$
+- normalize: scale back to $[-1,1]$
+```matlab
+maxVal = max(abs(transformedChannel));
+if maxVal &gt; 0
+    transformedChannel = transformedChannel / maxVal;
+```
+- filter: map out-of-bound to $\{-1, 1\}$
+```matlab
+transformedChannel(transformedChannel &gt; 1) = 1;
+transformedChannel(transformedChannel &lt; -1) = -1;
+```
+
+----
+
+## Conclusion
+```graphviz
+digraph{
+    compound=true
+    rankdir=LR
+    bgcolor=&#34;#191919&#34;
+    
+    graph [fontname=&#34;Source Sans Pro&#34;,fontsize=25, color=&#34;#ffffff&#34;, fontcolor=&#34;#ffffff&#34;];
+    node [fontname=&#34;Source Sans Pro&#34;,fontsize=20, color=&#34;#ffffff&#34;, fontcolor=&#34;#ffffff&#34;];
+  edge [fontname=&#34;Source Sans Pro&#34;,fontsize=25, color=&#34;#ffffff&#34;, fontcolor=&#34;#ffffff&#34;];
+  
+  subgraph cluster1{
+  concentrate=true
+  w [label=&#34;Music Wave\nstereo&#34;] [shape=box]
+  df [label=&#34;Series of\nFrequencies&#34;] [shape=box]
+  eq [label=&#34;Equalizer\nadjustment&#34;] [shape=box]
+  label=&#34;&#34;
+  }
+  w -&gt; df [label=&#34;FFT&#34;]
+  df-&gt; eq [label=&#34;10.^(m/20)&#34;]
+  eq -&gt; w [label=&#34;iFFT&#34;]
+  
+  no [label=&#34;Normalize&#34;] [shape=box]
+  fi [label=&#34;Filter&#34;] [shape=box]
+  w -&gt; no 
+  w -&gt; fi
+}
+```
+
+---
+
+## Future Scope
+1. Equalizer Presets.
+2. Performance
+
+---
+
+### Sources
+- Icons: [flaticon](https://www.flaticon.com/)
+- Flowchart: made using [draw.io](https://app.diagrams.net/)
+
+---
+
+## Thank you!!
+
+source code: [https://github.com/lusteven901228/matlab-final-project-2024](https://github.com/lusteven901228/matlab-final-project-2024)
+
+</div>
+            </div>
+
+            <div id="meta" style="display: none;">{&#34;title&#34;:&#34;Matlab final project&#34;,&#34;description&#34;:&#34;View the slide with \&#34;Slide Mode\&#34;.&#34;,&#34;contributors&#34;:&#34;[{\&#34;id\&#34;:\&#34;d914f359-017b-46b3-87ea-33c4eae62d47\&#34;,\&#34;add\&#34;:10390,\&#34;del\&#34;:3490}]&#34;}</div>
+
+            
+        </div>
+
+        
+         <script src="https://assets.hackmd.io/build/font-vendor.eaa8dd82d4e056021b8c.js" defer="defer"></script><script src="https://assets.hackmd.io/build/common-vendor.04da453a2a68f624f4d4.js" defer="defer"></script><script src="https://assets.hackmd.io/build/slide-vendor.860ac3abbcf53e23341c.js" defer="defer"></script><script src="https://assets.hackmd.io/build/slide-common.fb0162a2ceea4f101052.js" defer="defer"></script><script src="https://assets.hackmd.io/build/slide.a42a6e8ffdb7dc75be3b.js" defer="defer"></script>
+    </body>
+</html>
+
+
