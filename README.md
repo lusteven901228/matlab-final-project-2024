@@ -12,3 +12,4 @@ an music app with play/pause function and equalizer
 ## Sources
 
 - Icons: [flaticon](https://www.flaticon.com/)
+- Flowchart: made using [draw.io](https://app.diagrams.net/)
