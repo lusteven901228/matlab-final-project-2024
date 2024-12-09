@@ -1,7 +1,7 @@
 function [outputMusic] = applyTransformNormalize(inputMusic,inputMap)
 % this can be simply divided into 4 steps
 % 1. split the channels
-[~, numChannels] = size(inputMusic);
+[L, numChannels] = size(inputMusic);
 
 % initialize output
 outputMusic = zeros(size(inputMusic));
